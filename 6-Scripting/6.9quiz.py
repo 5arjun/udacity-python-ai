@@ -10,4 +10,4 @@ to {} if you submit all assignments before the due date.\n\n"
 
 ## write a for loop that iterates through each set of names, assignments, and grades to print each student's message
 for name, assignment, grade in zip(names.split(","), assignments.split(","), grades.split(",")):
-    print(message.format(name.title(), assignment, grade))
+    print(message.format(name.title(), assignment, grade, int(grade) + int(assignment)*2))
